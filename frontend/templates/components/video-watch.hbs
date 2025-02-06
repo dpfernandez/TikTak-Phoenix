@@ -1,0 +1,16 @@
+<div>
+
+<div class="videos">
+{{#if user.isLogged}}
+	<nav class="marco_superior">
+		<img class="imagen_video" src="{{user.selectedUser.foto_perfil}}" alt={{i18n 'Loading...'}}/>
+		<h6 id="autor">{{user.selectedUser.login}}@{{user.selectedUser.alias}}</h6>
+		<p>{{selectedVideo.texto}}</p>
+	</nav>
+	<video class="video" src="{{selectedVideo.ubicacion}}" width="780" height="600" id="{{selectedVideo.id}}" controls preload></video>
+	<nav class="marco_inferior">
+	</nav>
+{{/if}}
+</div>
+
+</div>

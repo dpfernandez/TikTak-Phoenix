@@ -1,0 +1,16 @@
+<div>
+
+{{#if users.length}}
+	{{#each users}}
+		<div id="imagenboton_usuarios">
+			<img class="imagen_usuarios" src={{foto_perfil}} alt={{i18n 'Loading...'}}>
+			<button id="userimage" class="userimage-button" item="{{login}}"></button>
+		</div>
+		<div id="datos_users">
+			<p>{{login}}@{{alias}}</p>
+			<p>{{i18n 'Followers'}}: {{n_seguidores}}</p>
+		</div>
+	{{/each}}
+{{/if}}
+
+</div>

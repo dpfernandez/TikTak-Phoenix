@@ -1,0 +1,26 @@
+<div>
+
+<section class=formulario>
+	<div>
+	<header>
+		<h4>{{i18n 'Login'}}</h4>
+	</header>
+	{{#if isLogged}}
+	  {{i18n 'Your are logged. Logout first'}}
+	{{else}}
+	  <div>
+	  <i class="fa fa-user"></i>
+	  <input type="text" id="login" placeholder="{{i18n 'Username'}}">
+	  </div>
+	  <div>
+	  <i class="fa fa-lock"></i>
+	  <input type="password" id="password" placeholder="{{i18n 'Password'}}">
+	  </div>
+	  <footer>
+	  <input type="submit" id='loginbutton' value="{{i18n 'Login'}}">
+	  </footer>
+	{{/if}}
+	</div>
+</section>
+
+</div>

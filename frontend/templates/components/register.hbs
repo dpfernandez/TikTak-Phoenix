@@ -1,0 +1,43 @@
+<div>
+
+<section class="formulario">
+	<div>
+		<header>
+			<h4>{{i18n 'Register'}}</h4>
+		</header>
+			<div>
+				<i class="fa fa-user"></i>
+				<input type="text" id="registerlogin" placeholder=" {{i18n 'Username'}}">
+				{{#i18n}}{{registerErrors.login}}{{/i18n}}
+			</div>
+			<div>
+				<i class="fa fa-flag"></i>
+				<input type="text" id="registeralias" placeholder="{{i18n 'Alias'}}">
+				{{#i18n}}{{registerErrors.alias}}{{/i18n}}
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<input type="email" id="registeremail" placeholder="{{i18n 'Email'}}">
+				{{#i18n}}{{registerErrors.email}}{{/i18n}}
+			</div>
+			<div>
+				<i class="fa fa-birthday-cake"></i>
+				<input type="date" id="registernacimiento" placeholder="{{i18n 'Birthday'}}">
+				{{#i18n}}{{registerErrors.nacimiento}}{{/i18n}}
+			</div>
+			<div>
+				<i class="fa fa-lock"></i>
+				<input type="password" id="registercontrasena" placeholder="{{i18n 'Password'}}">
+				{{#i18n}}{{registerErrors.contrasena}}{{/i18n}}
+			</div>
+			<div>
+				<i class="fa fa-repeat"></i>
+				<input type="password" id="registercontrasenarepeat" placeholder="{{i18n 'Repeat Password'}}">
+			</div>
+		<footer>
+			<input type="submit" id='registerbutton' value="{{i18n 'Create user'}}">
+		</footer>
+	</div>
+</section>
+
+</div>

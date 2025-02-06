@@ -1,0 +1,24 @@
+<div>
+
+{{#if user.isLogged}}
+  <form id="form-video" enctype="multipart/form-data">
+	<section class="formulario">
+		<div>
+			<header>
+				<h4>{{i18n 'Upload video'}}</h4>
+			</header>
+			<div>
+				<textarea id="texto" rows="2" cols="80" maxlength="65"></textarea>
+			</div>
+			<div>
+				<input id="file" name="file" type="file" required/>
+			</div>
+			<footer>
+			<input type="button" id="uploadbutton" value="{{i18n 'Upload video'}}"></input>
+			</footer>
+		</div>
+	</section>
+  </form>
+{{/if}}
+
+</div>

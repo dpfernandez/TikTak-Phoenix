@@ -1,0 +1,40 @@
+<div>
+
+{{#if isLogged}}
+  <form id="form-imagen" enctype="multipart/form-data">
+  <section class="formulario">
+	 <div>
+		  <header>
+			<h4>{{i18n 'Edit profile'}}</h4>
+		  </header>
+		  <label for="subir_foto"><img src="{{currentUser.foto_perfil}}" alt="{{i18n 'Upload image'}}" width="80" height="80"/></label>
+		  <input id="file" name="file" type="file" required/><input type="button" id="photobutton" value="{{i18n 'Change Photo'}}"></input>
+		  <div>
+			<i class="fa fa-flag"></i>
+			<input type="text" id="alias" placeholder="{{i18n 'Alias'}}" value="{{currentUser.alias}}">
+		  </div>
+		  <div>
+			<i class="fa fa-envelope"></i>
+			<input type="email" id="email" value="{{currentUser.email}}" placeholder="{{i18n 'Email'}}">
+		  </div>
+		  <div>
+			<i class="fa fa-birthday-cake"></i>
+			<input type="date" id="birthday" value="{{currentUser.nacimiento}}" placeholder="{{i18n 'Birthday'}}">
+		  </div>
+		  <div>
+			<i class="fa fa-lock"></i>
+			<input type="password" id="password" value="" placeholder="{{i18n 'Password'}}">
+		  </div>
+		  <div>
+			<i class="fa fa-repeat"></i>
+			<input type="password" id="repeat-password" value="" placeholder="{{i18n 'Repeat password'}}">
+		  </div>
+		  <footer>
+			<input type="button" id="savebutton" value="{{i18n 'Save'}}"></input>
+		  </footer>
+	</div>
+  </section>
+  </form>
+{{/if}}
+
+</div>

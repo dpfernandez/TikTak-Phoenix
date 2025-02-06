@@ -1,0 +1,16 @@
+<div>
+  {{#if isLogged}}
+	<ul>
+		<li><a href="#public-videos?currentuser={{currentUser.login}}"><img class="imagen_usuario" src="{{currentUser.foto_perfil}}" alt="{{i18n 'Loading...'}}"/></a><h6>{{currentUser.login}}@{{currentUser.alias}}</h6></li>
+		<li><a href="#videos?currentuser={{currentUser.login}}"><img class="icono_menu" src="../View/img/iconos/menu/miperfil_cursor.png" alt="{{i18n 'Mi videos'}}"/></a><h6>{{i18n 'My videos'}}</h6></li>
+		<li><a href="#upload-video?currentuser={{currentUser.login}}"><img class="icono_menu" src="../View/img/iconos/menu/subirvideo_cursor.png" alt="{{i18n 'Upload video'}}"/></a><h6>{{i18n 'Upload video'}}</h6></li>
+		<li><a href="#profile?currentuser={{currentUser.login}}"><img class="icono_menu" src="../View/img/iconos/menu/ajustes_cursor.png" alt="{{i18n 'Modify profile'}}"/></a><h6>{{i18n 'Modify profile'}}</h6></li>
+		<li><input type="button" id='logoutbutton'></input><h6>{{i18n 'logout'}}</h6></li>
+	</ul>
+  {{else}}
+		<ul>	
+			<li><a href='#register'><img class="icono_menu" src="../View/img/iconos/menu/registrar_cursor.png" alt="{{i18n 'Sign Up'}}"/></a><h6>{{i18n 'Sign Up'}}</h6></li>
+			<li><a href='#login'><img class="icono_menu" src="../View/img/iconos/menu/miperfil_cursor.png" alt="{{i18n 'Login'}}"/></a><h6>{{i18n 'Login'}}</h6></li>
+		</ul>
+  {{/if}}
+</div>

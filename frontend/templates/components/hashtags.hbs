@@ -1,0 +1,13 @@
+<div>
+
+{{#if hashtags.length}}
+	{{#each hashtags}}
+		<img class="imagen_hashtags" src="{{imagen}}" alt="{{i18n 'Hashtag photo'}}" width="60" height="60"/>
+		<div id="datos_hashtags">
+		<p>{{nombre}}</p>
+		<p>{{i18n 'Mentions'}}: {{n_veces}}</p>
+		</div>
+	{{/each}}
+{{/if}}
+
+</div>

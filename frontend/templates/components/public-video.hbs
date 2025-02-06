@@ -1,0 +1,16 @@
+<div key="{{id}}">
+
+{{#if_eq visible "es_visible"}}
+	<nav class="marco_superior">
+		<img class="imagen_video" src="{{user.currentUser.foto_perfil}}" alt={{i18n 'Loading...'}}/>
+		<h6 id="autor">{{user.currentUser.login}}@{{user.currentUser.alias}}</h6>
+		<p>{{texto}}</p>
+	</nav>
+	<video class="video" src="{{ubicacion}}" width="780" height="600" id="video-{{id}}" muted autoplay loop preload></video>
+	<nav class="marco_inferior">
+		<label class="me_gusta"><h6>{{n_likes}} {{i18n 'likes'}}</h6></label>
+		<button id="watch" class="watch-button" item="{{id}}"><h6>{{i18n 'watch'}}</h6></button>
+	</nav>
+{{/if_eq}}
+
+</div>

@@ -1,0 +1,534 @@
+/**********************************************
+*											  *
+*			    ESTRUCTURA PRINCIPAL	      *
+*											  *
+***********************************************/
+
+*{
+	
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	font-family: Garamond;
+
+}
+
+@media (max-width: 40em) {
+	
+	#menu {
+	display: none;
+	}
+
+	#hashtags {
+	display: none;
+	}
+
+	#users {
+	display: none;
+	}
+
+	.formulario {
+	display: none;
+	}
+
+}
+
+body
+{
+	background: #212121;
+}
+
+#cabecera
+{
+	height: 120px;
+	border-top: #002121 0.5px solid;
+	border-bottom: #002121 0.5px solid;
+	background-image: url("../../View/img/cabecera/cabecera_grande.png");
+	background-size:cover;
+}
+
+main{
+	background-image: url("../../View/img/fondo/home/fondo_home.png");
+	background-size: cover;
+}
+
+#pie
+{
+	background: #113B5D;
+	color:#fff;
+	width: 100%;
+	height: 100px;
+	float:left;
+	text-align: center;
+}
+#pie h4
+{
+	color: #999999;
+}
+#pie img
+{
+	height:60px;
+	text-align:center;
+}
+
+main > div  h1
+{	
+	text-align: center;
+	background-color: #0e2947;
+	color: white;
+	border: none;
+	width: 100%;
+	font-size:2.5em;
+	margin-top: 150px;
+	
+}
+
+/**********************************************
+*											  *
+*			     MENU SUPERIOR	              *
+*											  *
+***********************************************/
+
+
+#menu_superior
+{
+	background: #113B5D;
+	color:#fff;
+	width: 100%;
+	height: 50px;
+}
+
+span
+{
+	float:left;
+	width:25%;
+	height:100%;
+}
+
+#menu_superior h4
+{
+	margin-top: 15px;
+	text-align: center;
+	float:left;
+	width:50%;
+}
+
+#menu_superior h4 img
+{
+	display:block;
+	width:15px; height: 15px; 
+	background-size: 15px 15px;
+	border-radius: 50%;
+}
+
+#languagecontrol{
+text-align: center;
+}
+
+#languagecontrol > li{
+	display:inline-block;
+}
+
+#languagecontrol > li > a{
+	margin: 10px;
+	
+}
+
+.icono_bandera{
+	width: 35px;
+    height: 35px;
+
+}
+
+/**********************************************
+*											  *
+*			     MENU              			  *
+*											  *
+***********************************************/
+#menu
+{	
+	width:10%;
+	color:white;
+	
+}
+
+#menu li > h6
+{
+	display: none;
+	text-decoration:none;
+    color:white;
+}
+
+#menu li:hover > h6
+{
+	display: inline;
+	opacity: 99%;
+}
+
+.imagen_usuario{
+	border-radius: 50%;
+	width: 35px;
+    height: 35px;
+}
+
+.icono_menu{
+	border-radius: 50%;
+	width: 35px;
+    height: 35px;
+
+}
+
+.icono_menu:hover{
+	border: 2px solid #ffffff;
+}
+
+#logoutbutton{
+	background-image: url("../../View/img/iconos/menu/desconectar_cursor.png");
+	background-size: 33px;
+	width: 35px;
+    height: 35px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#logoutbutton:hover{
+	border: 2px solid #ffffff;
+}
+
+/**********************************************
+*											  *
+*	     USUARIOS Y HASHTAGS          		  *
+*											  *
+***********************************************/
+
+#hashtags {
+	float:right;
+	clear: right;
+	width:15%;
+	top:175px;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color:#3b3b3b;
+	max-height:150px;
+	border-radius: 25px;
+	color: white;
+	font-weight:bold;
+
+}
+
+.imagen_hashtags{
+	 margin-top: 
+}
+
+
+#datos_hashtags {
+	position: relative;
+	bottom: 50px;
+	left: 70px;
+}
+
+#users {
+	float: right;
+	width:15%;
+	top:175px;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color:#3b3b3b;
+	max-height:150px;
+	border-radius: 25px;
+	color: white;
+	font-weight:bold;
+
+}
+
+.imagen_usuarios{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	
+}
+
+#datos_users{
+	position: relative;
+	bottom: 60px;
+	left: 70px;
+}
+
+
+#userimage{
+	height: 20px;
+	width: 20px;
+	border-radius:50%;
+	background: url("../../View/img/iconos/flecha/moverizqzquierda.png");
+	background-size: 16px 16px;
+	cursor: pointer;
+}
+
+
+/**********************************************
+*											  *
+*	               VIDEOS         		  	  *
+*											  *
+***********************************************/
+
+.videos
+{
+	margin:auto;
+	height: 100%;
+	width:780px;
+	position: relative;
+	bottom: 200px;
+}
+
+.marco_superior{
+	float:left;
+	height:70.5px;
+	width:100%;
+	color: white;
+	background: url("../../View/img/video/marco_arriba2.png");
+	margin-top: 50px;
+}
+
+.marco_superior > img{
+		float: left;
+}
+
+.imagen_video{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+
+
+.video
+{	
+	width:100%;
+	height:100%;
+}
+
+
+.marco_inferior
+{
+	width:100%;
+	height:33.28px;
+	background-image: url("../../View/img/video/marco_abajo.png");
+	position: relative;
+	bottom: 5px;
+}
+
+.marco_inferior > button > h6
+{
+	display: none;
+	text-decoration:none;
+    color:white;
+}
+
+.marco_inferior > button:hover > h6
+{
+	display: block;
+	opacity: 99%;
+	position:relative;
+	top: 25px;
+}
+
+.marco_inferior > label > h6
+{
+	display: none;
+	text-decoration:none;
+    color:white;
+}
+
+.marco_inferior > label:hover > h6
+{
+	display: inline-block;
+	opacity: 99%;
+	position:relative;
+	top: 35px;
+	white-space: nowrap;
+}
+
+.marco_inferior > button
+{
+	float:left;
+	border-radius: 50%;
+	width: 35px;
+    height: 35px;
+	
+}
+
+.me_gusta{
+	float: left;
+	background-image: url("../../View/img/iconos/video/megusta_cursor.png");
+	background-size: 35px;
+	width: 35px;
+    height: 35px;
+}
+
+#watch{
+	background-image: url("../../View/img/iconos/video/compartir_cursor.png");
+	background-size: 33px;
+	width: 35px;
+    height: 35px;
+	cursor: pointer;
+
+}
+
+#watch:hover{
+	border: 2px solid #ffffff;
+}
+
+#hide{
+	background-image: url("../../View/img/iconos/video/ocultar.png");
+	background-size: 33px;
+	width: 35px;
+    height: 35px;
+	cursor: pointer;
+
+}
+
+#hide:hover{
+	border: 2px solid #ffffff;
+}
+
+#watch:hover{
+	border: 2px solid #ffffff;
+}
+
+#unhide{
+	background-image: url("../../View/img/iconos/video/ocultar_cursor.png");
+	background-size: 33px;
+	width: 35px;
+    height: 35px;
+	cursor: pointer;
+
+}
+
+#unhide:hover{
+	border: 2px solid #ffffff;
+}
+
+#delete{
+	background-image: url("../../View/img/iconos/video/borrar_cursor.png");
+	background-size: 33px;
+	width: 35px;
+    height: 35px;
+	cursor: pointer;
+
+}
+
+#delete:hover{
+	border: 2px solid #ffffff;
+}
+
+#marco_inferior header
+{
+	float:left;
+	width:calc(33.30px*4);
+	height:100%;
+}
+
+/**********************************************
+*											  *
+*	     FORMULARIOS        		          *
+*											  *
+***********************************************/
+
+.formulario 
+{
+	padding-top:5px;
+	margin:auto;
+	max-width:500px;
+	width:500px;
+	position:relative;
+	bottom: 100px;
+}
+.formulario div > header
+{
+	width:100%;
+	padding-bottom:5px;
+}
+.formulario div > header > h4
+{
+	text-align: center;
+	background-color: #0e2947;
+	color: white;
+	border: none;
+	width: 100%;
+	font-size:3.5em;
+}
+.formulario > div
+{
+	background-color: #646464;
+}
+.formulario div > div
+{
+	display: flex;
+	height:35px;
+	margin-bottom: 15px;
+}
+.formulario div > div > input
+{
+	width: 100%;
+	font-size:13px;
+	padding: 10px;
+	outline: none;
+}
+.formulario div > div > input:hover
+{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	color:white;
+	background-color: #0e2947;
+}
+.formulario div > div > input:focus
+{
+	border: 2px solid #0e294b;
+}
+.formulario div > footer > input
+{
+	text-align: center;
+	background-color: #0e2947;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size:1.7em;
+	font-weight: bold
+}
+.formulario div > footer > input:hover
+{
+	opacity: 1;
+}
+.formulario .fa
+{
+	padding: 10px;
+	background: #0e2940;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
+.formulario .fa:hover
+{
+	padding: 10px;
+	background: #0e2940;
+	color: gold;
+	min-width: 50px;
+	text-align: center;
+}
+.formulario img
+{
+	cursor: pointer;
+	height:60px;
+	width:60px;
+	vertical-align: middle;
+	border-radius: 50%;
+	padding-bottom:5px;
+}
+
+
+
+
+
+
